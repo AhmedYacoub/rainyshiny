@@ -7,3 +7,9 @@ A basic weather forecast app for IOS devices.
 
 ## API:
 Using [openweathermap.org](https://openweathermap.org) to get forecast API.
+
+## Screenshots:
+### Launch screen
+![Alt text](https://github.com/AhmedYacoub/rainyshiny/blob/master/launch.png "Launch screen")  
+### Main screen
+![Alt text](https://github.com/AhmedYacoub/rainyshiny/blob/master/home.png "Main screen")
