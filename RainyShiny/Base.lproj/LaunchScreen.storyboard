@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,12 +20,77 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="E4H-oJ-3TM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rainy Shiny" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mJ-kU-ZRP">
+                                        <rect key="frame" x="104.5" y="363" width="166" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="166" id="1NM-G4-bPF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="30"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Sdy-08-SOj">
+                                        <rect key="frame" x="88.5" y="156" width="199" height="200"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uYo-Or-mGI">
+                                                <rect key="frame" x="0.0" y="0.0" width="199" height="107"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clear" translatesAutoresizingMaskIntoConstraints="NO" id="vwO-xH-eBo">
+                                                        <rect key="frame" x="0.0" y="0.0" width="107" height="107"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Partially Cloudy" translatesAutoresizingMaskIntoConstraints="NO" id="BwG-yV-Q9T">
+                                                        <rect key="frame" x="107" y="0.0" width="92" height="107"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZLc-DH-eL5">
+                                                <rect key="frame" x="0.0" y="107" width="199" height="93"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Snow" translatesAutoresizingMaskIntoConstraints="NO" id="KUs-89-khP">
+                                                        <rect key="frame" x="0.0" y="0.0" width="107" height="93"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rain" translatesAutoresizingMaskIntoConstraints="NO" id="wrW-jF-qYp">
+                                                        <rect key="frame" x="107" y="0.0" width="92" height="93"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="92" id="Wra-US-GUt"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.26274509800000001" green="0.61176470589999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Sdy-08-SOj" firstAttribute="centerX" secondItem="0mJ-kU-ZRP" secondAttribute="centerX" id="141-YH-0sV"/>
+                                    <constraint firstItem="Sdy-08-SOj" firstAttribute="top" secondItem="E4H-oJ-3TM" secondAttribute="top" constant="156" id="BTB-6v-lYt"/>
+                                    <constraint firstItem="0mJ-kU-ZRP" firstAttribute="top" secondItem="Sdy-08-SOj" secondAttribute="bottom" constant="7" id="eLB-uL-22R"/>
+                                    <constraint firstItem="0mJ-kU-ZRP" firstAttribute="centerX" secondItem="E4H-oJ-3TM" secondAttribute="centerX" id="gt2-Pv-OAn"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="E4H-oJ-3TM" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="0cg-vK-lKR"/>
+                            <constraint firstItem="E4H-oJ-3TM" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="N9f-su-jk8"/>
+                            <constraint firstAttribute="trailing" secondItem="E4H-oJ-3TM" secondAttribute="trailing" id="ZKm-YM-eG6"/>
+                            <constraint firstItem="E4H-oJ-3TM" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="knF-B0-8Ye"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Clear" width="107" height="107"/>
+        <image name="Partially Cloudy" width="92" height="72"/>
+        <image name="Rain" width="92" height="92"/>
+        <image name="Snow" width="92" height="93"/>
+    </resources>
 </document>
